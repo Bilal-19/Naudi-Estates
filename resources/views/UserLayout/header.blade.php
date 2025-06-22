@@ -15,7 +15,7 @@
         <div class="flex flex-row justify-between items-center">
             <img src="{{ asset('assets/realestateLogo.png') }}" alt="logo" class="object-contain h-18 m-3">
             <button class="block md:hidden mr-5" id="toggleMenu">
-                <i class="fa-solid fa-sliders"></i>
+                <i class="fa-solid fa-bars"></i>
             </button>
         </div>
         <div class="md:space-x-10 flex flex-col md:flex-row hidden md:flex" id="menuOptions">
