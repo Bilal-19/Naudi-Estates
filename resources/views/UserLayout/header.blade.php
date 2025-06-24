@@ -14,6 +14,7 @@
     <style>
         body{
             font-family: "Inter", sans-serif;
+            background-color: #EAE7E7;
         }
     </style>
 </head>
