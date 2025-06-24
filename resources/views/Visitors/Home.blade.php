@@ -45,32 +45,68 @@
         </div>
     </div>
 
-    <div class="container mx-auto pt-30 pb-5">
+    <div class="container mx-auto pt-20 pb-5">
         <h3 class="text-xl md:text-[40px] text-center"><span class="font-light">Why</span> <span
                 class="text-[#2D241A] font-semibold">Long Term Property Management?</span></h3>
     </div>
 
-    <div class="container mx-auto pb-30">
-        <div class="flex flex-col md:flex-row justify-center items-center md:items-start md:space-x-10 space-y-8 md:space-y-0">
+    <div class="container mx-auto pb-20">
+        <div
+            class="flex flex-col md:flex-row justify-center items-center md:items-start md:space-x-10 space-y-8 md:space-y-0">
             <div class="text-center w-80 md:w-1/6">
-                <img src="{{asset('assets/Home/Icons/Income.png')}}" class="mx-auto md:mb-3 h-15 md:h-20" alt="">
+                <img src="{{ asset('assets/Home/Icons/Income.png') }}" class="mx-auto md:mb-3 h-15 md:h-20" alt="">
                 <p class="font-light text-md md:text-xl">Consistent rental income</p>
             </div>
             <div class="text-center w-80 md:w-1/6">
-                <img src="{{asset('assets/Home/Icons/Tenant.png')}}" class="mx-auto md:mb-3 h-15 md:h-20" alt="">
+                <img src="{{ asset('assets/Home/Icons/Tenant.png') }}" class="mx-auto md:mb-3 h-15 md:h-20" alt="">
                 <p class="font-light text-md md:text-xl">Lower tenant turnover</p>
             </div>
             <div class="text-center w-80 md:w-1/6">
-                <img src="{{asset('assets/Home/Icons/Cost.png')}}" class="mx-auto md:mb-3 h-15 md:h-20" alt="">
+                <img src="{{ asset('assets/Home/Icons/Cost.png') }}" class="mx-auto md:mb-3 h-15 md:h-20" alt="">
                 <p class="font-light text-md md:text-xl">Reduced Maintenance Costs</p>
             </div>
             <div class="text-center w-80 md:w-1/6">
-                <img src="{{asset('assets/Home/Icons/Asset.png')}}" class="mx-auto md:mb-3 h-15 md:h-20" alt="">
+                <img src="{{ asset('assets/Home/Icons/Asset.png') }}" class="mx-auto md:mb-3 h-15 md:h-20" alt="">
                 <p class="font-light text-md md:text-xl">Asset Protection and Appreciation</p>
             </div>
             <div class="text-center w-80 md:w-1/6">
-                <img src="{{asset('assets/Home/Icons/Landlord.png')}}" class="mx-auto md:mb-3 h-15 md:h-20" alt="">
+                <img src="{{ asset('assets/Home/Icons/Landlord.png') }}" class="mx-auto md:mb-3 h-15 md:h-20"
+                    alt="">
                 <p class="font-light text-md md:text-xl">Peace of Mind for Property Owners</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mx-auto pt-20 pb-5">
+        <h3 class="text-xl md:text-[40px] text-center"><span class="font-light">What</span> <span
+                class="text-[#2D241A] font-semibold">Sets Me Apart?</span></h3>
+    </div>
+
+    <div class="container mx-auto pb-20">
+        <div
+            class="flex flex-col md:flex-row justify-around md:gap-x-10 gap-y-8 md:gap-y-0">
+            <div class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
+                <img src="{{ asset('assets/Home/Icons/Map.png') }}" class="mx-auto md:mb-3 h-10 md:h-15" alt="">
+                <p class="font-light text-md md:text-xl">Local expertise in Maltese property law</p>
+            </div>
+            <div class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
+                <img src="{{ asset('assets/Home/Icons/Support.png') }}" class="mx-auto md:mb-3 h-10 md:h-15" alt="">
+                <p class="font-light text-md md:text-xl">24/7 support for landlords and tenants</p>
+            </div>
+            <div class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
+                <img src="{{ asset('assets/Home/Icons/Communication.png') }}" class="mx-auto md:mb-3 h-10 md:h-15" alt="">
+                <p class="font-light text-md md:text-xl">Transparent, real-time communication</p>
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row justify-center md:gap-x-10 gap-y-8 md:gap-y-0 mt-15">
+            <div class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
+                <img src="{{ asset('assets/Home/Icons/HomePlan.png') }}" class="mx-auto md:mb-3 h-10 md:h-15" alt="">
+                <p class="font-light text-md md:text-xl">Custom-tailored management plans</p>
+            </div>
+            <div class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
+                <img src="{{ asset('assets/Home/Icons/Globe.png') }}" class="mx-auto md:mb-3 h-10 md:h-15"
+                    alt="">
+                <p class="font-light text-md md:text-xl">Trusted by international and local clients</p>
             </div>
         </div>
     </div>
