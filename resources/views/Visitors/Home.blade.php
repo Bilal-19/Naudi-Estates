@@ -23,7 +23,7 @@
     </div>
 
 
-    <div class="container mx-auto py-30">
+    <div class="container mx-auto my-30">
         <div class="w-full flex flex-col md:flex-row justify-center items-start md:space-x-15 space-y-5 md:space-y-0">
             <div class="mx-auto md:m-5 w-80 md:w-1/2">
                 <img src="{{ asset('assets/Home/Intro.png') }}" alt="house key" class="md:h-160 object-cover rounded-xl">
@@ -45,7 +45,7 @@
         </div>
     </div>
 
-    <div class="container mx-auto pt-20 pb-5">
+    <div class="container mx-auto mt-20 pb-5">
         <h3 class="text-xl md:text-[40px] text-center"><span class="font-light">Why</span> <span
                 class="text-[#2D241A] font-semibold">Long Term Property Management?</span></h3>
     </div>
@@ -77,37 +77,56 @@
         </div>
     </div>
 
-    <div class="container mx-auto pt-20 pb-5">
+    <div class="container mx-auto mt-15 pb-5">
         <h3 class="text-xl md:text-[40px] text-center"><span class="font-light">What</span> <span
                 class="text-[#2D241A] font-semibold">Sets Me Apart?</span></h3>
     </div>
 
     <div class="container mx-auto pb-20">
-        <div
-            class="flex flex-col md:flex-row justify-around md:gap-x-10 gap-y-8 md:gap-y-0">
-            <div class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
+        <div class="flex flex-col md:flex-row justify-around md:gap-x-3 gap-y-8 md:gap-y-0">
+            <div
+                class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
                 <img src="{{ asset('assets/Home/Icons/Map.png') }}" class="mx-auto md:mb-3 h-10 md:h-15" alt="">
                 <p class="font-light text-md md:text-xl">Local expertise in Maltese property law</p>
             </div>
-            <div class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
+            <div
+                class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
                 <img src="{{ asset('assets/Home/Icons/Support.png') }}" class="mx-auto md:mb-3 h-10 md:h-15" alt="">
                 <p class="font-light text-md md:text-xl">24/7 support for landlords and tenants</p>
             </div>
-            <div class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
-                <img src="{{ asset('assets/Home/Icons/Communication.png') }}" class="mx-auto md:mb-3 h-10 md:h-15" alt="">
+            <div
+                class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
+                <img src="{{ asset('assets/Home/Icons/Communication.png') }}" class="mx-auto md:mb-3 h-10 md:h-15"
+                    alt="">
                 <p class="font-light text-md md:text-xl">Transparent, real-time communication</p>
             </div>
         </div>
-        <div class="flex flex-col md:flex-row justify-center md:gap-x-10 gap-y-8 md:gap-y-0 mt-15">
-            <div class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
-                <img src="{{ asset('assets/Home/Icons/HomePlan.png') }}" class="mx-auto md:mb-3 h-10 md:h-15" alt="">
+        <div class="flex flex-col md:flex-row justify-center md:gap-x-15 gap-y-8 md:gap-y-0 mt-15">
+            <div
+                class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
+                <img src="{{ asset('assets/Home/Icons/HomePlan.png') }}" class="mx-auto md:mb-3 h-10 md:h-15"
+                    alt="">
                 <p class="font-light text-md md:text-xl">Custom-tailored management plans</p>
             </div>
-            <div class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
-                <img src="{{ asset('assets/Home/Icons/Globe.png') }}" class="mx-auto md:mb-3 h-10 md:h-15"
-                    alt="">
+            <div
+                class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
+                <img src="{{ asset('assets/Home/Icons/Globe.png') }}" class="mx-auto md:mb-3 h-10 md:h-15" alt="">
                 <p class="font-light text-md md:text-xl">Trusted by international and local clients</p>
             </div>
         </div>
     </div>
+
+    <div class="container mx-auto mt-15 pb-5">
+        <h3 class="text-xl md:text-[40px] text-center"><span class="font-light">What</span> <span
+                class="text-[#2D241A] font-semibold">You Get?</span></h3>
+    </div>
+
+    <div class="container mx-auto">
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8" id="userBenefits">
+        </div>
+    </div>
+
+    @push('script-tag')
+        <script src="{{ asset('assets/JS/home.js') }}"></script>
+    @endpush
 @endsection
