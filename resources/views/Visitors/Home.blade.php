@@ -52,28 +52,7 @@
 
     <div class="container mx-auto pb-20">
         <div
-            class="flex flex-col md:flex-row justify-center items-center md:items-start md:space-x-10 space-y-8 md:space-y-0">
-            <div class="text-center w-80 md:w-1/6">
-                <img src="{{ asset('assets/Home/Icons/Income.png') }}" class="mx-auto md:mb-3 h-15 md:h-20" alt="">
-                <p class="font-light text-md md:text-xl">Consistent rental income</p>
-            </div>
-            <div class="text-center w-80 md:w-1/6">
-                <img src="{{ asset('assets/Home/Icons/Tenant.png') }}" class="mx-auto md:mb-3 h-15 md:h-20" alt="">
-                <p class="font-light text-md md:text-xl">Lower tenant turnover</p>
-            </div>
-            <div class="text-center w-80 md:w-1/6">
-                <img src="{{ asset('assets/Home/Icons/Cost.png') }}" class="mx-auto md:mb-3 h-15 md:h-20" alt="">
-                <p class="font-light text-md md:text-xl">Reduced Maintenance Costs</p>
-            </div>
-            <div class="text-center w-80 md:w-1/6">
-                <img src="{{ asset('assets/Home/Icons/Asset.png') }}" class="mx-auto md:mb-3 h-15 md:h-20" alt="">
-                <p class="font-light text-md md:text-xl">Asset Protection and Appreciation</p>
-            </div>
-            <div class="text-center w-80 md:w-1/6">
-                <img src="{{ asset('assets/Home/Icons/Landlord.png') }}" class="mx-auto md:mb-3 h-15 md:h-20"
-                    alt="">
-                <p class="font-light text-md md:text-xl">Peace of Mind for Property Owners</p>
-            </div>
+            class="flex flex-col md:flex-row justify-center items-center md:items-start md:space-x-10 space-y-8 md:space-y-0" id="whyUs">
         </div>
     </div>
 

@@ -1,3 +1,47 @@
+const reasonEl = document.getElementById("whyUs")
+const reasons = [
+    {
+        id: 1,
+        iconPath: "Income.png",
+        iconText: "Income",
+        desc: "Consistent rental income"
+    },
+    {
+        id: 2,
+        iconPath: "Tenant.png",
+        iconText: "Tenant",
+        desc: "Lower tenant turnover"
+    },
+    {
+        id: 3,
+        iconPath: "Cost.png",
+        iconText: "Cost",
+        desc: "Reduced Maintenance Costs"
+    },
+    {
+        id: 4,
+        iconPath: "Asset.png",
+        iconText: "Asset",
+        desc: "Asset Protection and Appreciation"
+    },
+    {
+        id: 5,
+        iconPath: "Landlord.png",
+        iconText: "Landlord",
+        desc: "Peace of Mind for Property Owners"
+    }
+]
+reasons.map((val, key)=>{
+    reasonEl.innerHTML +=
+    `
+    <div class="text-center w-80 md:w-1/6">
+        <img src="assets/Home/Icons/${val.iconPath}" class="mx-auto md:mb-3 h-15 md:h-20" alt="">
+        <p class="font-light text-md md:text-xl">${val.desc}</p>
+    </div>
+    `
+})
+
+const userBenefitsEl = document.getElementById("userBenefits")
 const userBenefits = [
     {
         id: 1,
@@ -96,9 +140,6 @@ const userBenefits = [
         description: "Detailed financial tracking and data entry system with a Personalized Property Performance Portfolio"
     }
 ]
-
-
-const userBenefitsEl = document.getElementById("userBenefits")
 
 
 userBenefits.map((val, key) => {
