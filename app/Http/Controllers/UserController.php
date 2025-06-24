@@ -10,4 +10,8 @@ class UserController extends Controller
     {
         return view("Visitors.Home");
     }
+
+    public function services(){
+        return view("Visitors.Services");
+    }
 }

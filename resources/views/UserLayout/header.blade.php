@@ -28,7 +28,7 @@
             </button>
         </div>
         <div class="md:space-x-10 flex flex-col md:flex-row hidden md:flex" id="menuOptions">
-            <a href="" class="hover:text-[#C9A578] ml-2 md:ml-0">Services</a>
+            <a href="{{route('Service')}}" class="hover:text-[#C9A578] ml-2 md:ml-0">Services</a>
             <a href="" class="hover:text-[#C9A578] ml-2 md:ml-0">Pricing</a>
             <a href="" class="hover:text-[#C9A578] ml-2 md:ml-0">Consultation</a>
             <a href="" class="hover:text-[#C9A578] ml-2 md:ml-0">Testimonials</a>

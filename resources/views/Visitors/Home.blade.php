@@ -110,7 +110,7 @@
                 class="text-[#2D241A] font-semibold">value?</span></h3>
     </div>
 
-    <div class="container mx-auto mb-50">
+    <div class="container mx-auto mb-25 md:mb-50">
         <div
             class="flex flex-col md:flex-row justify-center items-center md:items-start md:space-x-10 space-y-8 md:space-y-0" id="ourValues">
         </div>
