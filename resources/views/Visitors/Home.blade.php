@@ -23,7 +23,7 @@
     </div>
 
 
-    <div class="container mx-auto my-30">
+    <div class="container mx-auto my-50">
         <div class="w-full flex flex-col md:flex-row justify-center items-start md:space-x-15 space-y-5 md:space-y-0">
             <div class="mx-auto md:m-5 w-80 md:w-1/2">
                 <img src="{{ asset('assets/Home/Intro.png') }}" alt="house key" class="md:h-160 object-cover rounded-xl">
@@ -45,23 +45,23 @@
         </div>
     </div>
 
-    <div class="container mx-auto mt-20 pb-5">
+    <div class="container mx-auto mb-5">
         <h3 class="text-xl md:text-[40px] text-center"><span class="font-light">Why</span> <span
                 class="text-[#2D241A] font-semibold">Long Term Property Management?</span></h3>
     </div>
 
-    <div class="container mx-auto pb-20">
+    <div class="container mx-auto">
         <div
             class="flex flex-col md:flex-row justify-center items-center md:items-start md:space-x-10 space-y-8 md:space-y-0" id="whyUs">
         </div>
     </div>
 
-    <div class="container mx-auto mt-15 pb-5">
+    <div class="container mx-auto mt-50 mb-5">
         <h3 class="text-xl md:text-[40px] text-center"><span class="font-light">What</span> <span
                 class="text-[#2D241A] font-semibold">Sets Me Apart?</span></h3>
     </div>
 
-    <div class="container mx-auto pb-20">
+    <div class="container mx-auto">
         <div class="flex flex-col md:flex-row justify-around md:gap-x-3 gap-y-8 md:gap-y-0">
             <div
                 class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
@@ -95,13 +95,24 @@
         </div>
     </div>
 
-    <div class="container mx-auto mt-15 pb-5">
+    <div class="container mx-auto mt-50 mb-5">
         <h3 class="text-xl md:text-[40px] text-center"><span class="font-light">What</span> <span
                 class="text-[#2D241A] font-semibold">You Get?</span></h3>
     </div>
 
     <div class="container mx-auto">
         <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8" id="userBenefits">
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-50 mb-5">
+        <h3 class="text-xl md:text-[40px] text-center"><span class="font-light">How do I add </span> <span
+                class="text-[#2D241A] font-semibold">value?</span></h3>
+    </div>
+
+    <div class="container mx-auto mb-50">
+        <div
+            class="flex flex-col md:flex-row justify-center items-center md:items-start md:space-x-10 space-y-8 md:space-y-0" id="ourValues">
         </div>
     </div>
 

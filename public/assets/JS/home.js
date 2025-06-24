@@ -35,7 +35,7 @@ reasons.map((val, key)=>{
     reasonEl.innerHTML +=
     `
     <div class="text-center w-80 md:w-1/6">
-        <img src="assets/Home/Icons/${val.iconPath}" class="mx-auto md:mb-3 h-15 md:h-20" alt="">
+        <img src="assets/Home/Icons/${val.iconPath}" class="mx-auto md:mb-3 h-15 md:h-[75px]" alt="${val.iconText}">
         <p class="font-light text-md md:text-xl">${val.desc}</p>
     </div>
     `
@@ -146,8 +146,52 @@ userBenefits.map((val, key) => {
     userBenefitsEl.innerHTML +=
         `
         <div class="bg-white rounded-xl border-b-5 border-[#C9A578] py-3 px-8 text-center m-5">
-            <img src="assets/Home/Icons/${val.imagePath}" alt="${val.imageDesc}" class="mx-auto h-15 mb-2">
+            <img src="assets/Home/Icons/${val.imagePath}" alt="${val.imageDesc}" class="mx-auto md:h-[75px] mb-2">
             <p class="font-light text-base md:text-xl">${val.description}</p>
         </div>
+    `
+})
+
+const valEl = document.getElementById("ourValues")
+const ourValues = [
+    {
+        id: 1,
+        iconPath: "Graph.png",
+        iconText: "Graph",
+        desc: "Market-driven rent optimization"
+    },
+    {
+        id: 2,
+        iconPath: "Tools.png",
+        iconText: "Tools",
+        desc: "Reliable maintenance teams = fewer emergencies"
+    },
+    {
+        id: 3,
+        iconPath: "Clock.png",
+        iconText: "Clock",
+        desc: "Timely inspections to catch issues early"
+    },
+    {
+        id: 4,
+        iconPath: "Calculator.png",
+        iconText: "Calculator",
+        desc: "Financial tracking and year-end statements"
+    },
+    {
+        id: 5,
+        iconPath: "Done.png",
+        iconText: "Done",
+        desc: "Boosting tenant satisfaction = fewer vacancies"
+    }
+]
+
+ourValues.map((val, key)=>{
+    valEl.innerHTML +=
+    `
+    <div class="text-center w-80 md:w-1/6">
+        <img src="assets/Home/Icons/${val.iconPath}" class="mx-auto md:mb-3 h-15 md:h-[75px]" alt="${val.iconText}">
+        <p class="font-light text-md md:text-xl">${val.desc}</p>
+    </div>
     `
 })
