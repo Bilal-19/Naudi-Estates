@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get("/", [UserController::class,"index"])->name("Home");
 Route::get("/services", [UserController::class,"services"])->name("Service");
+Route::get("/pricing", [UserController::class,"pricing"])->name("Pricing");
+Route::get("/contact", [UserController::class,"contact"])->name("Contact");
+Route::get("/testimonials", [UserController::class,"feedback"])->name("Testimonials");

@@ -2,7 +2,7 @@
 
 @section('main-section')
     @push('title-tag')
-        <title>Naudi Estates | Services</title>
+        <title>Naudi Estates - Services</title>
     @endpush
 
     <div class="w-full bg-cover bg-no-repeat h-48 md:h-120 text-white flex flex-col justify-center space-y-3 p-10"
