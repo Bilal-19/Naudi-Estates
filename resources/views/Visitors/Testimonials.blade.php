@@ -36,7 +36,8 @@
     </div>
 
     <div class="container mx-auto">
-        <form action="" class="w-80 md:w-3/5 mx-auto space-y-5">
+        <form action="{{route('createFeedback')}}" method="post" class="w-80 md:w-3/5 mx-auto space-y-5">
+            @csrf
             <div class="flex flex-col">
                 <label for="name" class="mb-1 font-light text-[25px]">Enter your name: </label>
                 <input type="text" name="username" id="name"
