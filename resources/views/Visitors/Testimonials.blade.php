@@ -17,4 +17,17 @@
             Read authentic experiences shared by our valued customers.
         </p>
     </div>
+
+    <div class="container mx-auto my-10 md:my-20">
+        <h3 class="text-xl md:text-[45px] text-center font-light">My <span class="text-[#2D241A] font-medium">Clients</span>
+            Say It <span class="text-[#2D241A] font-medium">Best</span>
+        </h3>
+    </div>
+
+    <div class="container mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-10" id="clientFeedback">
+        </div>
+    </div>
+
+    <script src="{{asset("assets/JS/feedback.js")}}"></script>
 @endsection
