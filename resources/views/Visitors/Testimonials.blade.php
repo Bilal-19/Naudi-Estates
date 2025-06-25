@@ -24,10 +24,49 @@
         </h3>
     </div>
 
-    <div class="container mx-auto">
+    <div class="container mx-auto my-10 md:my-20">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-x-10" id="clientFeedback">
         </div>
     </div>
 
-    <script src="{{asset("assets/JS/feedback.js")}}"></script>
+    <div class="container mx-auto my-10 md:my-20">
+        <h3 class="text-xl md:text-[45px] text-center font-light">Share Your <span
+                class="text-[#2D241A] font-medium">Story</span>
+        </h3>
+    </div>
+
+    <div class="container mx-auto">
+        <form action="" class="w-80 md:w-3/5 mx-auto space-y-5">
+            <div class="flex flex-col">
+                <label for="name" class="mb-1 font-light text-[25px]">Enter your name: </label>
+                <input type="text" name="username" id="name"
+                    class="bg-white rounded-lg px-3 py-2 border-b-5 border-[#C9A578] focus:outline-none">
+            </div>
+
+            <div class="flex flex-col">
+                <label for="name" class="mb-1 font-light text-[25px]">Rating: </label>
+                <div class="flex flex-row-reverse justify-end gap-1 text-3xl">
+                    @for ($i = 5; $i >= 1; $i--)
+                        <input type="radio" name="rating" id="star{{ $i }}" value="{{ $i }}"
+                            class="hidden peer" required />
+                        <label for="star{{ $i }}"
+                            class="cursor-pointer text-gray-300 peer-checked:text-yellow-500 hover:text-yellow-500">&#9733;</label>
+                    @endfor
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <label for="message" class="mb-1 font-light text-[25px]">Enter your message: </label>
+                <textarea name="message" id="message" rows="5"
+                    class="bg-white rounded-lg px-3 py-2 border-b-5 border-[#C9A578] focus:outline-none resize-none"></textarea>
+            </div>
+
+
+            <button class="bg-[#2D241A] text-white font-light md:text-3xl rounded-lg px-3 py-2 block w-full">Submit
+                Message
+            </button>
+        </form>
+    </div>
+
+    <script src="{{ asset('assets/JS/feedback.js') }}"></script>
 @endsection

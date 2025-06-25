@@ -6,7 +6,7 @@ const userReviews = [
         rating: 5,
         userName: "Mrs. Marceca",
         userCategory: "Italian Investor",
-        userMessage: "Thanks to Robert, my properties in St. Julian’s have been fully occupied for more than 2 years. I don’t need to worry about anything, I can relax in retirement"
+        userMessage: "Thanks to Robert, my properties in St. Julian’s have been fully occupied for more than 2 years. I don’t need to worry about anything, I can relax in retirement!"
     },
     {
         id: 2,
@@ -28,10 +28,17 @@ const userReviews = [
 userReviews.map((val, key) => {
     feedbackEl.innerHTML +=
         `
-    <div class="bg-white border-b-5 border-[#C9A578] h-[356px] rounded-xl p-5">
-        <h5>${val.userName}</h5>
-        <p>${val.userCategory}</p>
-        <p>"${val.userMessage}"</p>
+    <div class="bg-white border-b-5 border-[#C9A578] h-fit md:h-80 rounded-xl p-5 m-5 md:m-0">
+        <h5 class="font-semibold text-lg md:text-[25px] mb-0">${val.userName}</h5>
+        <p class="font-light text-base md:text-[25px] mb-0">${val.userCategory}</p>
+        <div class="text-[#ffc200] text-lg mb-5">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+        </div>
+        <p class="font-light text-base md:text-[20px] mb-0">“${val.userMessage}”</p>
     <div>
     `
 })
