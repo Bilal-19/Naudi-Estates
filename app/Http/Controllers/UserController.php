@@ -47,8 +47,11 @@ class UserController extends Controller
             "created_at" => now()
         ]);
 
-        if ($isFeedbackSubmitted){
-            return redirect()->back();
+        if ($isFeedbackSubmitted) {
+            toastr()->success("Thankyou for the feedback!");
+        } else {
+            toastr()->warning("Please enter all the required details");
         }
+        return redirect()->back();
     }
 }

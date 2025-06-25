@@ -15,6 +15,7 @@ return new class extends Migration {
             $table->string('username');
             $table->string('rating');
             $table->string('message');
+            $table->string('visibility')->default('no');
             $table->timestamps();
         });
     }

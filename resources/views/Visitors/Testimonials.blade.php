@@ -36,22 +36,28 @@
     </div>
 
     <div class="container mx-auto">
-        <form action="{{route('createFeedback')}}" method="post" class="w-80 md:w-3/5 mx-auto space-y-5">
+        <form action="{{ route('createFeedback') }}" autocomplete="off" method="post"
+            class="w-80 md:w-3/5 mx-auto space-y-5 mb-20">
             @csrf
             <div class="flex flex-col">
                 <label for="name" class="mb-1 font-light text-[25px]">Enter your name: </label>
                 <input type="text" name="username" id="name"
-                    class="bg-white rounded-lg px-3 py-2 border-b-5 border-[#C9A578] focus:outline-none">
+                    class="bg-white rounded-lg px-3 py-2 border-b-5 border-[#C9A578] focus:outline-none" value="{{old('username')}}">
+                <span class="text-red-800">
+                    @error('username')
+                        {{ 'Please enter your name'  }}
+                    @enderror
+                </span>
             </div>
 
             <div class="flex flex-col">
-                <label for="name" class="mb-1 font-light text-[25px]">Rating: </label>
+                <label class="mb-1 font-light text-[25px]">Rating: </label>
                 <div class="flex flex-row-reverse justify-end gap-1 text-3xl">
                     @for ($i = 5; $i >= 1; $i--)
                         <input type="radio" name="rating" id="star{{ $i }}" value="{{ $i }}"
-                            class="hidden peer" required />
+                            class="hidden peer" required value="{{old('rating')}}"/>
                         <label for="star{{ $i }}"
-                            class="cursor-pointer text-gray-300 peer-checked:text-yellow-500 hover:text-yellow-500">&#9733;</label>
+                            class="cursor-pointer text-gray-400 peer-checked:text-yellow-500 hover:text-yellow-500">&#9733;</label>
                     @endfor
                 </div>
             </div>
@@ -60,10 +66,16 @@
                 <label for="message" class="mb-1 font-light text-[25px]">Enter your message: </label>
                 <textarea name="message" id="message" rows="5"
                     class="bg-white rounded-lg px-3 py-2 border-b-5 border-[#C9A578] focus:outline-none resize-none"></textarea>
+                <span class="text-red-800">
+                    @error('message')
+                        {{ 'Please share your feedback message'  }}
+                    @enderror
+                </span>
             </div>
 
 
-            <button class="bg-[#2D241A] text-white font-light md:text-3xl rounded-lg px-3 py-2 block w-full">Submit
+            <button
+                class="bg-[#2D241A] text-white font-light md:text-3xl rounded-lg px-3 py-2 block w-full hover:cursor-pointer">Submit
                 Message
             </button>
         </form>
