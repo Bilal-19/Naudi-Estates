@@ -13,12 +13,14 @@
             Professional Services for Property Owners in Malta
         </p>
         <div class="mt-4 md:mt-8 space-x-2 md:space-x-5">
-            <button
-                class="bg-[#C9A578] text-[#2D241A] hover:bg-[#2D241A] hover:text-[#C9A578] hover:cursor-pointer transition duration-100 ease-in-out uppercase font-medium rounded-full px-4 md:px-8 py-1 md:py-3 text-sm md:text-xl">Contact
-                Me</button>
-            <button
-                class="bg-[#C9A578] text-[#2D241A] hover:bg-[#2D241A] hover:text-[#C9A578] hover:cursor-pointer transition duration-100 ease-in-out uppercase font-medium rounded-full px-4 md:px-8 py-1 md:py-3 text-sm md:text-xl">Book
-                a Consultation</button>
+            <a href="{{route('Contact')}}"
+                class="bg-[#C9A578] text-[#2D241A] hover:bg-[#2D241A] hover:text-[#C9A578] hover:cursor-pointer transition duration-100 ease-in-out uppercase font-medium rounded-full px-4 md:px-8 py-2 md:py-3 text-sm md:text-xl">
+                Contact Me
+            </a>
+            <a
+                class="bg-[#C9A578] text-[#2D241A] hover:bg-[#2D241A] hover:text-[#C9A578] hover:cursor-pointer transition duration-100 ease-in-out uppercase font-medium rounded-full px-4 md:px-8 py-2 md:py-3 text-sm md:text-xl">
+                Book a Consultation
+            </a>
         </div>
     </div>
 
@@ -51,8 +53,8 @@
     </div>
 
     <div class="container mx-auto">
-        <div
-            class="flex flex-col md:flex-row justify-center items-center md:items-start md:space-x-10 space-y-8 md:space-y-0" id="whyUs">
+        <div class="flex flex-col md:flex-row justify-center items-center md:items-start md:space-x-10 space-y-8 md:space-y-0"
+            id="whyUs">
         </div>
     </div>
 
@@ -111,8 +113,8 @@
     </div>
 
     <div class="container mx-auto mb-25 md:mb-50">
-        <div
-            class="flex flex-col md:flex-row justify-center items-center md:items-start md:space-x-10 space-y-8 md:space-y-0" id="ourValues">
+        <div class="flex flex-col md:flex-row justify-center items-center md:items-start md:space-x-10 space-y-8 md:space-y-0"
+            id="ourValues">
         </div>
     </div>
 
