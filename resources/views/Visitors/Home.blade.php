@@ -4,22 +4,18 @@
     <title>Naudi Estates - Home</title>
 @endpush
 @section('main-section')
-    <div class="w-full bg-cover bg-no-repeat h-80 md:h-200 text-white flex flex-col justify-center space-y-3 p-10"
+    <div class="w-full bg-cover bg-no-repeat h-80 md:h-200 text-white flex flex-col justify-center space-y-3 p-5 md:p-10"
         style="background-image: url('{{ asset('assets/Home/banner.png') }}')">
-        <h1 class="text-2xl md:text-6xl font-medium">Long Term <span class="text-[#C9A578]">Property Management</span></h1>
-        <h2 class="text-xl md:text-[45px] font-medium">Maximizing <span class="text-[#C9A578]">Value</span>, Minimizing <span
+        <h1 class="text-xl md:text-6xl font-medium">Long Term <span class="text-[#C9A578]">Property Management</span></h1>
+        <h2 class="text-lg md:text-[45px] font-medium">Maximizing <span class="text-[#C9A578]">Value</span>, Minimizing <span
                 class="text-[#C9A578]">Stress</span></h2>
         <p class="text-md md:text-3xl font-light">
             Professional Services for Property Owners in Malta
         </p>
         <div class="mt-4 md:mt-8 space-x-2 md:space-x-5">
             <a href="{{route('Contact')}}"
-                class="bg-[#C9A578] text-[#2D241A] hover:bg-[#2D241A] hover:text-[#C9A578] hover:cursor-pointer transition duration-100 ease-in-out uppercase font-medium rounded-full px-4 md:px-8 py-2 md:py-3 text-sm md:text-xl">
+                class="bg-[#C9A578] text-[#2D241A] hover:bg-[#2D241A] hover:text-[#C9A578] hover:cursor-pointer transition duration-100 ease-in-out uppercase font-medium rounded-full px-2 md:px-8 py-2 md:py-3 text-xs md:text-xl">
                 Contact Me
-            </a>
-            <a href="{{route('Calendar')}}"
-                class="bg-[#C9A578] text-[#2D241A] hover:bg-[#2D241A] hover:text-[#C9A578] hover:cursor-pointer transition duration-100 ease-in-out uppercase font-medium rounded-full px-4 md:px-8 py-2 md:py-3 text-sm md:text-xl">
-                Book a Consultation
             </a>
         </div>
     </div>
@@ -33,7 +29,7 @@
             <div class="mx-auto md:m-5 w-80 md:w-1/2">
                 <h3 class="text-[#2D241A] font-medium text-xl md:text-[40px]">Your Trusted Property Manager</h3>
                 <p class="text-justify text-md md:text-[24px] font-light">
-                    I embarked on my Realtor career back in May of 2021, with Sky Estates & Co. I received the constant
+                    I embarked on my Realtor career back in May of 2021, with a small company. I received the constant
                     appropriate training, guidance and support to further my knowledge within the industry. I spent 1 year,
                     and 3 months working in the company and was even promoted to Team Leader within the first 6 months
                     further being offered a Managerial Role as Office Manager after 1 year. I turned down this opportunity
@@ -48,7 +44,7 @@
     </div>
 
     <div class="container mx-auto mb-5">
-        <h3 class="text-xl md:text-[40px] text-center"><span class="font-light">Why</span> <span
+        <h3 class="text-lg md:text-[40px] text-center"><span class="font-light">Why</span> <span
                 class="text-[#2D241A] font-semibold">Long Term Property Management?</span></h3>
     </div>
 
@@ -59,7 +55,7 @@
     </div>
 
     <div class="container mx-auto mt-50 mb-5">
-        <h3 class="text-xl md:text-[40px] text-center"><span class="font-light">What</span> <span
+        <h3 class="text-lg md:text-[40px] text-center"><span class="font-light">What</span> <span
                 class="text-[#2D241A] font-semibold">Sets Me Apart?</span></h3>
     </div>
 
@@ -98,7 +94,7 @@
     </div>
 
     <div class="container mx-auto mt-50 mb-5">
-        <h3 class="text-xl md:text-[40px] text-center"><span class="font-light">What</span> <span
+        <h3 class="text-lg md:text-[40px] text-center"><span class="font-light">What</span> <span
                 class="text-[#2D241A] font-semibold">You Get?</span></h3>
     </div>
 

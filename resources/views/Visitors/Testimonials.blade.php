@@ -40,7 +40,7 @@
             class="w-80 md:w-3/5 mx-auto space-y-5 mb-20">
             @csrf
             <div class="flex flex-col">
-                <label for="name" class="mb-1 font-light text-[25px]">Enter your name: </label>
+                <label for="name" class="mb-1 font-light text-base md:text-[25px]">Enter your name: </label>
                 <input type="text" name="username" id="name"
                     class="bg-white rounded-lg px-3 py-2 border-b-5 border-[#C9A578] focus:outline-none" value="{{old('username')}}">
                 <span class="text-red-800">
@@ -51,7 +51,7 @@
             </div>
 
             <div class="flex flex-col">
-                <label class="mb-1 font-light text-[25px]">Rating: </label>
+                <label class="mb-1 font-light text-base md:text-[25px]">Rating: </label>
                 <div class="flex flex-row-reverse justify-end gap-1 text-3xl">
                     @for ($i = 5; $i >= 1; $i--)
                         <input type="radio" name="rating" id="star{{ $i }}" value="{{ $i }}"
@@ -63,7 +63,7 @@
             </div>
 
             <div class="flex flex-col">
-                <label for="message" class="mb-1 font-light text-[25px]">Enter your message: </label>
+                <label for="message" class="mb-1 font-light text-base md:text-[25px]">Enter your message: </label>
                 <textarea name="message" id="message" rows="5"
                     class="bg-white rounded-lg px-3 py-2 border-b-5 border-[#C9A578] focus:outline-none resize-none"></textarea>
                 <span class="text-red-800">

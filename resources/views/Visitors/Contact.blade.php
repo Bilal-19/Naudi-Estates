@@ -5,7 +5,7 @@
         <title>Naudi Estate - Contact</title>
     @endpush
 
-    <div class="w-full bg-cover bg-no-repeat h-56 md:h-160 text-white flex flex-col justify-center space-y-3 p-10"
+    <div class="w-full bg-cover bg-no-repeat h-40 md:h-160 text-white flex flex-col justify-center space-y-3 p-10"
         style="background-image: url('{{ asset('assets/Contact/banner.png') }}')">
     </div>
 
@@ -14,7 +14,7 @@
             <div class="w-80 mx-auto md:w-2/5 md:mx-0 bg-white rounded-xl p-2 md:p-5 space-y-5 md:mr-5">
                 <div class="flex flex-row">
                     <div class="mr-2">
-                        <img src="{{ asset('assets/Contact/Phone.png') }}" alt="Phone Icon" class="h-8">
+                        <img src="{{ asset('assets/Contact/Phone.png') }}" alt="Phone Icon" class="h-10 md:h-8">
                     </div>
                     <div class="flex flex-col">
                         <h5 class="font-medium md:text-3xl">Phone</h5>
@@ -25,7 +25,7 @@
 
                 <div class="flex flex-row">
                     <div class="mr-2">
-                        <img src="{{ asset('assets/Contact/Email.png') }}" alt="Email Icon" class="h-8">
+                        <img src="{{ asset('assets/Contact/Email.png') }}" alt="Email Icon" class="h-10 md:h-8">
                     </div>
                     <div class="flex flex-col">
                         <h5 class="font-medium md:text-3xl">Email</h5>
@@ -35,7 +35,7 @@
 
                 <div class="flex flex-row">
                     <div class="mr-2">
-                        <img src="{{ asset('assets/Contact/Location.png') }}" alt="Location Icon" class="h-8">
+                        <img src="{{ asset('assets/Contact/Location.png') }}" alt="Location Icon" class="h-10 md:h-8">
                     </div>
                     <div class="flex flex-col">
                         <h5 class="font-medium md:text-3xl">Location</h5>
@@ -51,7 +51,7 @@
                 </div>
             </div>
             <div class="w-80 md:w-1/2">
-                <h2 class="text-2xl md:text-[45px] font-light">Contact <span class="font-medium">Us</span></h2>
+                <h2 class="text-2xl md:text-[45px] font-light text-center md:text-start">Contact <span class="font-medium">Us</span></h2>
                 <form action="{{ route('createEnquiry') }}" autocomplete="off" method="post"
                     class="space-y-4 md:space-y-8">
                     @csrf

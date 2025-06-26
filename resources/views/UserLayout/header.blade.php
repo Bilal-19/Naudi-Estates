@@ -39,8 +39,6 @@
                 class="hover:text-[#C9A578] ml-2 md:ml-0 {{ request()->routeIs('Service') ? 'text-[#C9A578]' : 'text-white' }}">Services</a>
             <a href="{{ route('Pricing') }}"
                 class="hover:text-[#C9A578] ml-2 md:ml-0 {{ request()->routeIs('Pricing') ? 'text-[#C9A578]' : 'text-white' }}">Pricing</a>
-                <a href="{{ route('Calendar') }}"
-                class="hover:text-[#C9A578] ml-2 md:ml-0 {{ request()->routeIs('Calendar') ? 'text-[#C9A578]' : 'text-white' }}">Consultation</a>
             <a href="{{ route('Testimonials') }}"
                 class="hover:text-[#C9A578] ml-2 md:ml-0 {{ request()->routeIs('Testimonials') ? 'text-[#C9A578]' : 'text-white' }}">Testimonials</a>
             <a href="{{ route('Contact') }}"

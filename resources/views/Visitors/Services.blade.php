@@ -5,7 +5,7 @@
         <title>Naudi Estates - Services</title>
     @endpush
 
-    <div class="w-full bg-cover bg-no-repeat h-48 md:h-120 text-white flex flex-col justify-center space-y-3 p-10"
+    <div class="w-full bg-cover bg-no-repeat h-40 md:h-120 text-white flex flex-col justify-center space-y-3 p-10"
         style="background-image: url('{{ asset('assets/Services/banner.png') }}')">
         <h1 class="text-2xl md:text-6xl font-medium">Core <span class="text-[#C9A578]">Services</span></h1>
     </div>
@@ -28,7 +28,7 @@
 
     <div class="container mx-auto mb-25 md:mb-50">
         <div
-            class="flex flex-col md:flex-row justify-center items-center md:items-start md:space-x-10 space-y-8 md:space-y-0" id="potentialAudience">
+            class="flex flex-col md:flex-row justify-center items-center md:items-start md:space-x-10 space-y-5 md:space-y-0" id="potentialAudience">
         </div>
     </div>
 
