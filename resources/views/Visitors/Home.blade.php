@@ -17,7 +17,7 @@
                 class="bg-[#C9A578] text-[#2D241A] hover:bg-[#2D241A] hover:text-[#C9A578] hover:cursor-pointer transition duration-100 ease-in-out uppercase font-medium rounded-full px-4 md:px-8 py-2 md:py-3 text-sm md:text-xl">
                 Contact Me
             </a>
-            <a
+            <a href="{{route('Calendar')}}"
                 class="bg-[#C9A578] text-[#2D241A] hover:bg-[#2D241A] hover:text-[#C9A578] hover:cursor-pointer transition duration-100 ease-in-out uppercase font-medium rounded-full px-4 md:px-8 py-2 md:py-3 text-sm md:text-xl">
                 Book a Consultation
             </a>

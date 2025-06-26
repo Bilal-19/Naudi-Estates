@@ -32,6 +32,10 @@ class UserController extends Controller
         return view("Visitors.Testimonials");
     }
 
+    public function calendar(){
+        return view('Visitors.Calendar');
+    }
+
     public function createFeedback(Request $request)
     {
         $request->validate([
