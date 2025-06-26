@@ -18,11 +18,11 @@
     </div>
 
     <div class="container mx-auto my-10 md:my-20">
-        <h3 class="text-xl md:text-[45px] text-center font-light">
+        <h3 class="text-lg md:text-[45px] text-center font-light">
             <span class="text-[#2D241A] font-medium">Transparent</span> Pricing, <span
                 class="text-[#2D241A] font-medium">Commission</span> Based
         </h3>
-        <p class="w-90 md:w-2/3 mx-auto text-base md:text-[25px] font-light text-center">
+        <p class="w-80 md:w-2/3 mx-auto text-base md:text-[25px] font-light text-center">
             All charges will be commission based at a percentage of the monthly rental value excluding VAT. Each commission
             rate is monthly per unit. VAT is charged only on top of the commission rate.
         </p>
