@@ -25,14 +25,14 @@
             <a href="{{route('Home')}}">
                 <img src="{{ asset('assets/realestateLogo.png') }}" alt="logo" class="object-contain h-18 m-3">
             </a>
-            <button class="block md:hidden mr-5" id="toggleMenu">
+            <button class="block md:hidden mr-5 hover:cursor-pointer" id="toggleMenu">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
-        <div class="md:space-x-10 flex flex-col md:flex-row hidden md:flex" id="menuOptions">
+        <div class="md:space-x-10 flex flex-col md:flex-row hidden md:flex space-y-2 md:space-y-0" id="menuOptions">
             <a href="{{route('Service')}}" class="hover:text-[#C9A578] ml-2 md:ml-0 {{request()->routeIs("Service") ? "text-[#C9A578]": "text-white"}}">Services</a>
             <a href="{{route('Pricing')}}" class="hover:text-[#C9A578] ml-2 md:ml-0 {{request()->routeIs("Pricing") ? "text-[#C9A578]": "text-white"}}">Pricing</a>
             <a href="{{route('Testimonials')}}" class="hover:text-[#C9A578] ml-2 md:ml-0 {{request()->routeIs("Testimonials") ? "text-[#C9A578]": "text-white"}}">Testimonials</a>
-            <a href="{{route('Contact')}}" class="mr-5 hover:text-[#C9A578] ml-2 md:ml-0 {{request()->routeIs("Contact") ? "text-[#C9A578]": "text-white"}}">Contact</a>
+            <a href="{{route('Contact')}}" class="mr-5 hover:text-[#C9A578] ml-2 md:ml-0 mb-3 md:mb-0 {{request()->routeIs("Contact") ? "text-[#C9A578]": "text-white"}}">Contact</a>
         </div>
     </div>
