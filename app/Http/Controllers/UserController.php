@@ -54,4 +54,27 @@ class UserController extends Controller
         }
         return redirect()->back();
     }
+
+    public function createEnquiry(Request $request)
+    {
+        $request->validate([
+            "username" => "required",
+            "useremail" => "required",
+            "message" => "required",
+        ]);
+
+        $isEnquiryCreated = DB::table('enquiry')->insert([
+            "username" => $request->username,
+            "useremail" => $request->useremail,
+            "usermessage" => $request->message,
+            "created_at" => now()
+        ]);
+
+        if ($isEnquiryCreated) {
+            toastr()->success("We've receive your message. Our team will contact you soon");
+        } else {
+            toastr()->warning("Please enter all the required details");
+        }
+        return redirect()->back();
+    }
 }
