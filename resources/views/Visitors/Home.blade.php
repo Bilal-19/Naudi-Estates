@@ -25,7 +25,7 @@
     </div>
 
 
-    <div class="container mx-auto my-50">
+    <div class="container mx-auto my-25 md:my-50">
         <div class="w-full flex flex-col md:flex-row justify-center items-start md:space-x-15 space-y-5 md:space-y-0">
             <div class="mx-auto md:m-5 w-80 md:w-1/2">
                 <img src="{{ asset('assets/Home/Intro.png') }}" alt="house key" class="md:h-160 object-cover rounded-xl">
