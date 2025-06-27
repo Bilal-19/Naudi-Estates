@@ -1,6 +1,10 @@
 @extends('AdminLayout.main')
 
 @section('section')
+    @php
+        $data['countEnquiries'] = DB::table('enquiry')->count();
+        $data['countFeedback'] = DB::table('feedback')->count();
+    @endphp
     <div class="container mx-auto p-5">
         <p class="text-md mb-5">Welcome back, Bilal</p>
         <div class="w-full flex flex-col md:flex-row justify-between md:space-x-5 space-y-5 md:space-y-0">

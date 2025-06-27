@@ -9,9 +9,7 @@ class AdminController extends Controller
 {
     public function index()
     {
-        $data["countEnquiries"] = DB::table("enquiry")->count();
-        $data["countFeedback"] = DB::table("feedback")->count();
-        return view("Admin.Dashboard", with(compact("data")));
+        return view("Admin.Dashboard");
     }
 
     public function readEnquiries(){
