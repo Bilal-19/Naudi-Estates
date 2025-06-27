@@ -4,7 +4,7 @@ const userReviews = [
     {
         id: 1,
         rating: 5,
-        userName: "Mrs. Marceca",
+        userName: "Mrs. Marchese",
         userCategory: "Italian Investor",
         userMessage: "Thanks to Robert, my properties in St. Julian’s have been fully occupied for more than 2 years. I don’t need to worry about anything, I can relax in retirement!"
     },
@@ -18,7 +18,7 @@ const userReviews = [
     {
         id: 3,
         rating: 5,
-        userName: "Dr. P. Camilleri",
+        userName: "Dr. P. Andrews",
         userCategory: "American-based Investor",
         userMessage: "Honest. Straight-forward and prompt. His service honestly is like a breath of fresh air."
     }
