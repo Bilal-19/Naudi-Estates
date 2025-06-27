@@ -27,7 +27,7 @@
     <!-- Topbar -->
     <header class="bg-[#2d241a] text-white py-4 px-6 flex justify-between items-center">
         <h1 class="text-lg md:text-2xl font-semibold">Naudi Estate Dashboard</h1>
-        <button id="menu-btn" class="md:hidden text-white text-md">
+        <button id="menu-btn" class="md:hidden text-white text-md hover:cursor-pointer">
             <i class="fas fa-bars"></i>
         </button>
     </header>
@@ -36,8 +36,8 @@
     <div class="flex flex-1">
         <!-- Sidebar -->
         <aside id="sidebar"
-            class="bg-[#2d241a] text-white w-64 space-y-4 py-6 px-4 absolute md:relative z-10 top-16 left-0 md:top-0 md:flex md:flex-col transform -translate-x-full md:translate-x-0 transition-transform duration-200 ease-in-out h-min-screen">
-            <nav class="space-y-10 text-sm">
+            class="bg-[#2d241a] text-white w-64 space-y-4 py-6 px-4 absolute md:relative z-10 top-16 left-0 md:top-0 md:flex md:flex-col transform -translate-x-full md:translate-x-0 transition-transform duration-200 ease-in-out h-screen">
+            <nav class="space-y-5 text-sm">
                 <a href="{{route('Dashboard')}}"
                     class="mt-10 flex items-center space-x-2 px-4 py-2 {{ request()->routeIs('Dashboard') ? 'bg-[#a66616] text-white rounded-lg' : 'text-white' }}">
                     <i class="fa-solid fa-house"></i>
