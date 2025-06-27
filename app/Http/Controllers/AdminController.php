@@ -11,9 +11,6 @@ class AdminController extends Controller
     {
         $data["countEnquiries"] = DB::table("enquiry")->count();
         $data["countFeedback"] = DB::table("feedback")->count();
-        $data["countUsers"] = DB::table("users")->
-            where('role', '=', 'Admin')->
-            count();
         return view("Admin.Dashboard", with(compact("data")));
     }
 

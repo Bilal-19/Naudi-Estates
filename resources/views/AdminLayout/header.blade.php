@@ -50,8 +50,8 @@
                 </a>
                 <a href="{{route('ClientFeedback')}}"
                     class="flex items-center space-x-2 px-4 py-2 {{ request()->routeIs('ClientFeedback') ? 'bg-[#a66616] text-white rounded-lg' : 'text-white' }}">
-                    <i class="fa-solid fa-circle-question"></i>
-                    <span class="inline">Client Feedback</span>
+                    <i class="fa-solid fa-comments"></i>
+                    <span class="inline">Testimonials</span>
                 </a>
             </nav>
         </aside>
