@@ -17,3 +17,4 @@ Route::post("/create-enquiry", [UserController::class,"createEnquiry"])->name("c
 
 
 Route::get("/admin-dashboard", [AdminController::class,"index"])->name("Dashboard");
+Route::get("/admin-enquiries", [AdminController::class,"readEnquiries"])->name("Enquiries");

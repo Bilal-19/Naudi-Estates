@@ -16,4 +16,9 @@ class AdminController extends Controller
             count();
         return view("Admin.Dashboard", with(compact("data")));
     }
+
+    public function readEnquiries(){
+        $fetchEnquiries = DB::table("enquiry")->get();
+        return view("Admin.Enquiries", with(compact("fetchEnquiries")));
+    }
 }
