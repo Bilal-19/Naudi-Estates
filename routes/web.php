@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AuthenticationController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -18,3 +19,7 @@ Route::post("/create-enquiry", [UserController::class,"createEnquiry"])->name("c
 Route::get("/admin-dashboard", [AdminController::class,"index"])->name("Dashboard");
 Route::get("/enquiries", [AdminController::class,"readEnquiries"])->name("Enquiries");
 Route::get("/client-feedback", [AdminController::class,"readTestimonials"])->name("ClientFeedback");
+
+
+Route::get("/sign-up", [AuthenticationController::class,"SignUp"])->name("SignUp");
+Route::post("/create-account", [AuthenticationController::class,"createAccount"])->name("CreateAccount");
