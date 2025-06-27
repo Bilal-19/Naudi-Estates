@@ -30,10 +30,10 @@
             <img src="{{ asset('assets/realestateLogo.png') }}" alt="logo" class="h-24 mx-auto mb-5">
             <h4 class="text-white text-3xl mb-1 text-center">Admin Login</h4>
             <p class="text-white text-sm font-light text-center mx-auto mb-5">Login to manage properties, enquiries, clients, and more.</p>
-            <form action="{{route('CreateAccount')}}" method="post" autocomplete="off" class="space-y-3">
+            <form action="{{route('LoginAttempt')}}" method="post" autocomplete="off" class="space-y-3">
                 @csrf
                 <div>
-                    <input type="email" placeholder="Enter your email address" name="useremail"
+                    <input type="email" placeholder="Enter your email address" name="email"
                         class="bg-white rounded-md px-3 py-2 focus:outline-none md:w-2/3 block mx-auto">
                 </div>
 

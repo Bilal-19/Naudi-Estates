@@ -14,6 +14,14 @@ class AuthenticationController extends Controller
         return view("AuthLayout.Signup");
     }
 
+    public function getEmailCount($emailAddress)
+    {
+        $isAlreadyExist = DB::table("users")->
+            where("email", "=", $emailAddress)->
+            count();
+        return $isAlreadyExist;
+    }
+
     public function createAccount(Request $request)
     {
         $request->validate([
@@ -25,9 +33,7 @@ class AuthenticationController extends Controller
         // check if account already exist
         $getEmail = $request->useremail;
 
-        $isAlreadyExist = DB::table("users")->
-            where("email", "=", $getEmail)->
-            count();
+        $isAlreadyExist = $this->getEmailCount($getEmail);
 
         if ($isAlreadyExist >= 1) {
             toastr()->warning("User with this email already exist.");
@@ -48,7 +54,32 @@ class AuthenticationController extends Controller
         return redirect()->back();
     }
 
-    public function Login(){
+    public function Login()
+    {
         return view("AuthLayout.Login");
+    }
+
+    public function loginAttempt(Request $request)
+    {
+        $credentials = $request->validate([
+            "email" => "required",
+            "password" => "required",
+        ]);
+
+        // check if email exist
+        $isAlreadyExist = $this->getEmailCount($request->email);
+
+        if ($isAlreadyExist == 0) {
+            toastr()->info("User with this email doesnot exist.");
+        } else {
+            $haveAccount = Auth::attempt($credentials);
+            if ($haveAccount){
+                toastr()->success("Redirecting to Admin Dashboard.");
+                return view("Admin.Dashboard");
+            } else{
+                toastr()->warning("Invalid credentials");
+            }
+        }
+        return redirect()->back();
     }
 }
