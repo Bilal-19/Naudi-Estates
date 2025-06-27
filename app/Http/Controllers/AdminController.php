@@ -2,11 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use DB;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
-    public function index(){
-        return view("Admin.Dashboard");
+    public function index()
+    {
+        $data["countEnquiries"] = DB::table("enquiry")->count();
+        $data["countFeedback"] = DB::table("feedback")->count();
+        $data["countUsers"] = DB::table("users")->
+            where('role', '=', 'Admin')->
+            count();
+        return view("Admin.Dashboard", with(compact("data")));
     }
 }
