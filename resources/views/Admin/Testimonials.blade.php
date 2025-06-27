@@ -24,7 +24,7 @@
                         <td class="p-4">{{ $record->rating }}</td>
                         <td class="p-4">{{ $record->message }}</td>
                         <td class="p-4 text-center">
-                            <a href="">
+                            <a href="{{route('ToggleVisibility',['id'=>$record->id])}}">
                                 @if ($record->visibility === 'no')
                                     <i class="fa-solid fa-eye-slash"></i>
                                 @else

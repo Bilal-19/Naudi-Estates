@@ -19,6 +19,7 @@ Route::post("/create-enquiry", [UserController::class,"createEnquiry"])->name("c
 Route::get("/admin-dashboard", [AdminController::class,"index"])->name("Dashboard");
 Route::get("/enquiries", [AdminController::class,"readEnquiries"])->name("Enquiries");
 Route::get("/client-feedback", [AdminController::class,"readTestimonials"])->name("ClientFeedback");
+Route::get("/toggle-visibility/{id}", [AdminController::class,"toggleVisibility"])->name("ToggleVisibility");
 
 
 Route::get("/sign-up", [AuthenticationController::class,"SignUp"])->name("SignUp");
