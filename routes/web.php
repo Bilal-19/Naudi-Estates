@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -13,3 +14,6 @@ Route::get("/testimonials", [UserController::class,"feedback"])->name("Testimoni
 
 Route::post("/create-feedback", [UserController::class,"createFeedback"])->name("createFeedback");
 Route::post("/create-enquiry", [UserController::class,"createEnquiry"])->name("createEnquiry");
+
+
+Route::get("/admin-dashboard", [AdminController::class,"index"])->name("Dashboard");
