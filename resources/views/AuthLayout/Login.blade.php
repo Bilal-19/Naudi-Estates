@@ -14,7 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
     <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css' rel='stylesheet' />
-    <title>Naudi Estate - SignUp</title>
+    <title>Naudi Estate - Login</title>
     <style>
         body {
             font-family: "Inter", sans-serif;
@@ -25,36 +25,31 @@
 <body>
 
     <div class="w-full h-screen bg-cover bg-no-repeat flex flex-col justify-center"
-        style="background-image:url({{ asset('assets/Auth/signup.jpg') }})">
+        style="background-image:url({{ asset('assets/Auth/login.jpg') }})">
         <div class="bg-black md:w-1/2 mx-auto rounded-2xl p-10">
             <img src="{{ asset('assets/realestateLogo.png') }}" alt="logo" class="h-24 mx-auto mb-5">
-            <h4 class="text-white text-3xl mb-1 text-center">Admin Registration</h4>
-            <p class="text-white text-sm font-light text-center mx-auto mb-5">Manage properties, enquiries, clients, and more.</p>
+            <h4 class="text-white text-3xl mb-1 text-center">Admin Login</h4>
+            <p class="text-white text-sm font-light text-center mx-auto mb-5">Login to manage properties, enquiries, clients, and more.</p>
             <form action="{{route('CreateAccount')}}" method="post" autocomplete="off" class="space-y-3">
                 @csrf
-                <div>
-                    <input type="text" placeholder="Enter your fullname" name="username"
-                        class="bg-white rounded-md px-3 py-2 focus:outline-none md:w-2/3 block mx-auto">
-                </div>
-
                 <div>
                     <input type="email" placeholder="Enter your email address" name="useremail"
                         class="bg-white rounded-md px-3 py-2 focus:outline-none md:w-2/3 block mx-auto">
                 </div>
 
                 <div>
-                    <input type="password" placeholder="Enter your password" name="password"
+                    <input type="password" placeholder="Enter your fullname" name="password"
                         class="bg-white rounded-md px-3 py-2 focus:outline-none md:w-2/3 block mx-auto">
                 </div>
 
                 <div>
                     <button
                         class="bg-[#2D241A] text-white font-light text-base md:text-md rounded-lg px-3 py-2 block md:w-2/3 mx-auto hover:cursor-pointer">
-                        Create Admin Profile
+                        Access Admin Panel
                     </button>
                 </div>
             </form>
-            <p class="text-white text-sm font-light text-center my-3">Have an account? <a href="{{route('Login')}}" class="text-[#C9A578] font-medium">Login</a></p>
+            <p class="text-white text-sm font-light text-center my-3">Don't have an account? <a href="{{route('SignUp')}}" class="text-[#C9A578] font-medium">Sign Up</a></p>
         </div>
     </div>
 

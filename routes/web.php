@@ -23,3 +23,5 @@ Route::get("/client-feedback", [AdminController::class,"readTestimonials"])->nam
 
 Route::get("/sign-up", [AuthenticationController::class,"SignUp"])->name("SignUp");
 Route::post("/create-account", [AuthenticationController::class,"createAccount"])->name("CreateAccount");
+Route::get("/log-in", [AuthenticationController::class,"Login"])->name("Login");
+

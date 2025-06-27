@@ -47,4 +47,8 @@ class AuthenticationController extends Controller
         }
         return redirect()->back();
     }
+
+    public function Login(){
+        return view("AuthLayout.Login");
+    }
 }
