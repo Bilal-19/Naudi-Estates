@@ -82,4 +82,9 @@ class AuthenticationController extends Controller
         }
         return redirect()->back();
     }
+
+    // Forget Password
+
+
+    // Logout
 }
