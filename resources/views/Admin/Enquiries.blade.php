@@ -2,21 +2,26 @@
 
 @section('section')
     <div class="container mx-auto p-5">
-        <div class="w-full">
+        <div class="w-full mb-10">
+            <h2 class="text-center text-3xl font-light">Customer <span class="font-medium text-[#C9A578]">Enquiries</span></h2>
+        </div>
+        <div class="w-full overflow-x-auto">
             <table class="min-w-max md:w-full">
                 <tr class="border-b text-sm font-medium">
                     <th class="p-3">ID</th>
                     <th class="p-3">Customer Name</th>
                     <th class="p-3">Email</th>
                     <th class="p-3">Message</th>
-                    <th class="p-3">Date</th>
-                    <th class="p-3">Time</th>
+                    <th class="p-3">Date & Time</th>
                 </tr>
 
                 @foreach ($fetchEnquiries as $record)
-                    <tr>
-                        <td>{{ $record->id }}</td>
-                        <td>{{ $record->username }}</td>
+                    <tr class="border-b text-base md:text-md font-light text-center">
+                        <td class="p-3">{{ $record->id }}</td>
+                        <td class="p-3">{{ $record->username }}</td>
+                        <td class="p-3">{{ $record->useremail }}</td>
+                        <td class="p-3">{{ $record->usermessage }}</td>
+                        <td class="p-3">{{ date('d M Y h:i:sa', strtotime($record->created_at)) }}</td>
                     </tr>
                 @endforeach
             </table>

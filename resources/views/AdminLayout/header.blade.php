@@ -37,15 +37,15 @@
         <!-- Sidebar -->
         <aside id="sidebar"
             class="bg-[#2d241a] text-white w-64 space-y-4 py-6 px-4 absolute md:relative z-10 top-16 left-0 md:top-0 md:flex md:flex-col transform -translate-x-full md:translate-x-0 transition-transform duration-200 ease-in-out h-min-screen">
-            <nav class="space-y-3 text-sm">
+            <nav class="space-y-10 text-sm">
                 <a href="{{route('Dashboard')}}"
-                    class="flex items-center space-x-2 px-4 py-2 {{ request()->routeIs('Dashboard') ? 'bg-[#C9A578] text-white rounded hover:bg-[#a66616] hover:text-white' : 'text-white' }}">
+                    class="mt-10 flex items-center space-x-2 px-4 py-2 {{ request()->routeIs('Dashboard') ? 'bg-[#a66616] text-white rounded-lg' : 'text-white' }}">
                     <i class="fa-solid fa-house"></i>
                     <span class="inline">Dashboard</span>
                 </a>
                 <a href="{{route('Enquiries')}}"
-                    class="flex items-center space-x-2 px-4 py-2 {{ request()->routeIs('Enquiries') ? 'bg-[#C9A578] text-white rounded hover:bg-[#a66616] hover:text-white' : 'text-white' }}">
-                    <i class="fa-solid fa-house"></i>
+                    class="flex items-center space-x-2 px-4 py-2 {{ request()->routeIs('Enquiries') ? 'bg-[#a66616] text-white rounded-lg' : 'text-white' }}">
+                    <i class="fa-solid fa-circle-question"></i>
                     <span class="inline">Enquiries</span>
                 </a>
             </nav>
