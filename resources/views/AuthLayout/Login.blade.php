@@ -38,7 +38,7 @@
                 </div>
 
                 <div>
-                    <input type="password" placeholder="Enter your fullname" name="password"
+                    <input type="password" placeholder="Enter your password" name="password"
                         class="bg-white rounded-md px-3 py-2 focus:outline-none md:w-2/3 block mx-auto">
                 </div>
 
