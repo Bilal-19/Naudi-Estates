@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\EnquiryEmail;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use Mail;
 
 class UserController extends Controller
 {
@@ -32,7 +34,8 @@ class UserController extends Controller
         return view("Visitors.Testimonials");
     }
 
-    public function calendar(){
+    public function calendar()
+    {
         return view('Visitors.Calendar');
     }
 
@@ -75,6 +78,12 @@ class UserController extends Controller
         ]);
 
         if ($isEnquiryCreated) {
+            Mail::to("bilalmuhammadyousuf543@gmail.com")->
+                send(new EnquiryEmail(
+                    $request->username,
+                    $request->useremail,
+                    $request->message
+                ));
             toastr()->success("We've receive your message. Our team will contact you soon");
         } else {
             toastr()->warning("Please enter all the required details");
