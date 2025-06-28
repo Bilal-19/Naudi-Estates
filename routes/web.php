@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AuthenticationController;
+use App\Http\Controllers\EmailController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,3 +29,4 @@ Route::post("/create-account", [AuthenticationController::class,"createAccount"]
 Route::get("/log-in", [AuthenticationController::class,"Login"])->name("Login");
 Route::post("/login-attempt", [AuthenticationController::class,"loginAttempt"])->name("LoginAttempt");
 
+Route::get("/send-email", [EmailController::class,"sendEmail"])->name("SendEmail");
