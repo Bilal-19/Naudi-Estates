@@ -3,7 +3,7 @@
 @section('section')
     <div class="container mx-auto p-5">
         <div class="w-full mb-10">
-            <h2 class="text-center text-3xl font-light">Customer <span class="font-medium text-[#C9A578]">Testimonials</span>
+            <h2 class="text-center text-lg md:text-3xl font-light">Customer <span class="font-medium text-[#C9A578]">Testimonials</span>
             </h2>
         </div>
         <div class="w-full overflow-x-auto">

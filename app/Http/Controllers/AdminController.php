@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use Auth;
 use DB;
 use Illuminate\Http\Request;
 
@@ -9,19 +10,31 @@ class AdminController extends Controller
 {
     public function index()
     {
-        return view("Admin.Dashboard");
+        if (Auth::check()) {
+            return view("Admin.Dashboard");
+        } else {
+            return view("AuthLayout.Login");
+        }
     }
 
     public function readEnquiries()
     {
-        $fetchEnquiries = DB::table("enquiry")->get();
-        return view("Admin.Enquiries", with(compact("fetchEnquiries")));
+        if (Auth::check()) {
+            $fetchEnquiries = DB::table("enquiry")->get();
+            return view("Admin.Enquiries", with(compact("fetchEnquiries")));
+        } else {
+            return view("AuthLayout.Login");
+        }
     }
 
     public function readTestimonials()
     {
-        $fetchTestimonials = DB::table("feedback")->get();
-        return view("Admin.Testimonials", with(compact("fetchTestimonials")));
+        if (Auth::check()) {
+            $fetchTestimonials = DB::table("feedback")->get();
+            return view("Admin.Testimonials", with(compact("fetchTestimonials")));
+        } else {
+            return view("AuthLayout.Login");
+        }
     }
 
     public function toggleVisibility($id)
