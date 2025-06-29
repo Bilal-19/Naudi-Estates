@@ -31,14 +31,6 @@
         </p>
 
         <p style="font-size: 16px;">
-            For security reasons, we recommend logging in and changing your password as soon as possible.
-        </p>
-
-        <p style="font-size: 16px;">
-            If you did not request this password reset, please contact our support team immediately.
-        </p>
-
-        <p style="font-size: 16px;">
             Thank you,<br>The Support Team
         </p>
     </div>
