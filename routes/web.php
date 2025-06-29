@@ -27,4 +27,5 @@ Route::get("/sign-up", [AuthenticationController::class,"SignUp"])->name("SignUp
 Route::post("/create-account", [AuthenticationController::class,"createAccount"])->name("CreateAccount");
 
 Route::get("/log-in", [AuthenticationController::class,"Login"])->name("Login");
+Route::get("/log-out", [AuthenticationController::class,"SignOut"])->name("LogOut");
 Route::post("/login-attempt", [AuthenticationController::class,"loginAttempt"])->name("LoginAttempt");

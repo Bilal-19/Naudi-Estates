@@ -73,10 +73,10 @@ class AuthenticationController extends Controller
             toastr()->info("User with this email doesnot exist.");
         } else {
             $haveAccount = Auth::attempt($credentials);
-            if ($haveAccount){
+            if ($haveAccount) {
                 toastr()->success("Redirecting to Admin Dashboard.");
                 return view("Admin.Dashboard");
-            } else{
+            } else {
                 toastr()->warning("Invalid credentials");
             }
         }
@@ -87,4 +87,12 @@ class AuthenticationController extends Controller
 
 
     // Logout
+    public function SignOut()
+    {
+        if (Auth::user()) {
+            Auth::logout();
+            toastr()->success("Logged out successfully.");
+            return redirect()->route("Login");
+        }
+    }
 }

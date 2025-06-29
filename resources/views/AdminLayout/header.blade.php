@@ -53,5 +53,10 @@
                     <i class="fa-solid fa-comments"></i>
                     <span class="inline">Testimonials</span>
                 </a>
+                <a href="{{route('LogOut')}}"
+                    class="flex items-center space-x-2 px-4 py-2 {{ request()->routeIs('LogOut') ? 'bg-[#a66616] text-white rounded-lg' : 'text-white' }}">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span class="inline">Log Out</span>
+                </a>
             </nav>
         </aside>
