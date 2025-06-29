@@ -121,8 +121,6 @@ class AuthenticationController extends Controller
                 return redirect()->back();
             }
         }
-
-        // Send it to the user
     }
 
     // Logout

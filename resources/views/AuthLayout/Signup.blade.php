@@ -28,9 +28,9 @@
         style="background-image:url({{ asset('assets/Auth/signup.jpg') }})">
         <div class="bg-black md:w-1/2 mx-auto rounded-2xl p-10">
             <img src="{{ asset('assets/realestateLogo.png') }}" alt="logo" class="h-24 mx-auto mb-5">
-            <h4 class="text-white text-3xl mb-1 text-center">Admin Registration</h4>
-            <p class="text-white text-sm font-light text-center mx-auto mb-5">Manage properties, enquiries, clients, and more.</p>
-            <form action="{{route('CreateAccount')}}" method="post" autocomplete="off" class="space-y-3">
+            <h4 class="text-white text-xl md:text-3xl mb-1 text-center">Admin Registration</h4>
+            <p class="text-white text-xs md:text-sm font-light text-center mx-auto mb-5">Manage properties, enquiries, clients, and more.</p>
+            <form action="{{route('CreateAccount')}}" method="post" autocomplete="off" class="space-y-3 text-sm md:text-base">
                 @csrf
                 <div>
                     <input type="text" placeholder="Enter your fullname" name="username"

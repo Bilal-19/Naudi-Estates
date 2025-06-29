@@ -26,12 +26,12 @@
 
     <div class="w-full h-screen bg-cover bg-no-repeat flex flex-col justify-center"
         style="background-image:url({{ asset('assets/Auth/login.jpg') }})">
-        <div class="bg-black md:w-1/2 mx-auto rounded-2xl p-10">
+        <div class="bg-black w-80 md:w-1/2 mx-auto rounded-2xl p-10">
             <img src="{{ asset('assets/realestateLogo.png') }}" alt="logo" class="h-24 mx-auto mb-5">
-            <h4 class="text-white text-3xl mb-1 text-center">Admin Login</h4>
-            <p class="text-white text-sm font-light text-center mx-auto mb-5">Login to manage properties, enquiries,
+            <h4 class="text-white text-xl md:text-3xl mb-1 text-center">Admin Login</h4>
+            <p class="text-white text-xs md:text-sm font-light text-center mx-auto mb-5">Login to manage properties, enquiries,
                 clients, and more.</p>
-            <form action="{{ route('LoginAttempt') }}" method="post" autocomplete="off" class="space-y-3">
+            <form action="{{ route('LoginAttempt') }}" method="post" autocomplete="off" class="space-y-3 text-sm md:text-base">
                 @csrf
                 <div>
                     <input type="email" placeholder="Enter your email address" name="email"

@@ -32,7 +32,7 @@
             <p class="text-white text-xs md:text-sm font-light text-center mx-auto mb-5">
                 Enter your email address below and we’ll send you a new password if it exists in our system.
             </p>
-            <form action="{{route('ResetPassword')}}" method="post" autocomplete="off" class="space-y-3">
+            <form action="{{route('ResetPassword')}}" method="post" autocomplete="off" class="space-y-3 text-sm md:text-base">
                 @csrf
                 <div>
                     <input type="email" placeholder="Enter your email address" name="email"
