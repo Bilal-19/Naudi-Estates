@@ -28,11 +28,21 @@
     </div>
 
     <div class="container mx-auto my-10 md:my-20">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-10" id="clientFeedback">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-x-10">
+            @foreach ($fetchFeedback as $record)
+                <div class="bg-white border-b-5 border-[#C9A578] h-fit md:h-80 rounded-xl p-5 m-5 md:m-0">
+                    <h5 class="font-semibold text-lg md:text-[25px] mb-0">{{ $record->username }}</h5>
+                    <p class="font-light text-base md:text-[25px] mb-0">{{ $record->designation }}</p>
+                    <div class="text-[#ffc200] text-lg mb-5 space-x-1">
+                        {!! str_repeat('<i class="fa-solid fa-star"></i>', $record->rating) !!}
+                    </div>
+                    <p class="font-light text-base md:text-[20px] mb-0">“{{ $record->message }}”</p>
+                </div>
+            @endforeach
         </div>
     </div>
 
-    <div class="container mx-auto my-10 md:my-20">
+    <div class="container mx-auto my-10 md:my-20 block">
         <h3 class="text-xl md:text-[45px] text-center font-light">Share Your <span
                 class="text-[#2D241A] font-medium">Story</span>
         </h3>
@@ -50,6 +60,18 @@
                 <span class="text-red-800">
                     @error('username')
                         {{ 'Please enter your name' }}
+                    @enderror
+                </span>
+            </div>
+
+            <div class="flex flex-col">
+                <label for="designation" class="mb-1 font-light text-base md:text-[25px]">Enter your designation: </label>
+                <input type="text" name="designation" id="designation"
+                    class="bg-white rounded-lg px-3 py-2 border-b-5 border-[#C9A578] focus:outline-none"
+                    value="{{ old('designation') }}">
+                <span class="text-red-800">
+                    @error('designation')
+                        {{ 'Please enter your designation' }}
                     @enderror
                 </span>
             </div>
@@ -84,6 +106,4 @@
             </button>
         </form>
     </div>
-
-    <script src="{{ asset('assets/JS/feedback.js') }}"></script>
 @endsection

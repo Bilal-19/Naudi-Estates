@@ -31,7 +31,8 @@ class UserController extends Controller
 
     public function feedback()
     {
-        return view("Visitors.Testimonials");
+        $fetchFeedback = DB::table("feedback")->where("visibility","=","yes")->get();
+        return view("Visitors.Testimonials", with(compact("fetchFeedback")));
     }
 
     public function calendar()
@@ -43,12 +44,14 @@ class UserController extends Controller
     {
         $request->validate([
             "username" => "required",
+            "designation" => "required",
             "rating" => "required",
             "message" => "required",
         ]);
 
         $isFeedbackSubmitted = DB::table("feedback")->insert([
             "username" => $request->username,
+            "designation" => $request->designation,
             "rating" => $request->rating,
             "message" => $request->message,
             "created_at" => now()

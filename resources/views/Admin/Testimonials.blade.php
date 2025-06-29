@@ -22,7 +22,7 @@
                         <td class="p-3">{{ $record->id }}</td>
                         <td class="p-3">{{ $record->username }}</td>
                         <td class="p-3">{{ $record->rating }}</td>
-                        <td class="p-3">{{ $record->message }}</td>
+                        <td class="p-3">{{ Str::limit($record->message, 75, '...') }}</td>
                         <td class="p-3 text-center">
                             <a href="{{route('ToggleVisibility',['id'=>$record->id])}}">
                                 @if ($record->visibility === 'no')

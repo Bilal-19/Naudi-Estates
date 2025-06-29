@@ -13,8 +13,9 @@ return new class extends Migration {
         Schema::create('feedback', function (Blueprint $table) {
             $table->id();
             $table->string('username');
+            $table->string('designation');
             $table->string('rating');
-            $table->string('message');
+            $table->longText('message');
             $table->string('visibility')->default('no');
             $table->timestamps();
         });
