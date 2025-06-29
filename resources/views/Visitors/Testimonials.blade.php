@@ -2,7 +2,7 @@
 
 @section('main-section')
     @push('title-tag')
-        <title>Naudi Estate - Testimonials</title>
+        <title>Client Testimonials | Hear from Our Happy Clients | Naudi Estates</title>
     @endpush
 
     <div class="w-full bg-cover bg-no-repeat h-52 md:h-[662px] text-white flex flex-col justify-start p-10"

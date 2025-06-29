@@ -1,9 +1,13 @@
 @extends('UserLayout.main')
 
+@push('title-tag')
+    <title>Contact Naudi Estates | Get in Touch with Our Team in San Gwann</title>
+@endpush
+@push('meta-description')
+    <meta name="description"
+        content="Get in touch with Naudi Estates for expert real estate help in San Gwann. We're here to assist with all your property needs. Contact us today!">
+@endpush
 @section('main-section')
-    @push('title-tag')
-        <title>Naudi Estate - Contact</title>
-    @endpush
 
     <div class="w-full bg-cover bg-no-repeat h-40 md:h-160 text-white flex flex-col justify-center space-y-3 p-10"
         style="background-image: url('{{ asset('assets/Contact/banner.png') }}')">

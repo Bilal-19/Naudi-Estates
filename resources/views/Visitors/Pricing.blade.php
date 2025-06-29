@@ -1,9 +1,14 @@
 @extends('UserLayout.main')
 
+@push('title-tag')
+    <title>Transparent Pricing for Property Services | Naudi Estates</title>
+@endpush
+@push('meta-description')
+    <meta name="description"
+        content="View our transparent and competitive pricing for real estate services. At Naudi Estates, we offer clear fees and excellent value in San Gwann.">
+@endpush
+
 @section('main-section')
-    @push('title-tag')
-        <title>Naudi Estate - Pricing</title>
-    @endpush
 
     <div class="w-full bg-cover bg-no-repeat h-56 md:h-120 text-white flex flex-col justify-center space-y-3 p-10"
         style="background-image: url('{{ asset('assets/Pricing/banner.png') }}')">

@@ -1,7 +1,12 @@
 @extends('UserLayout.main')
 
 @push('title-tag')
-    <title>Naudi Estates - Home</title>
+    <title>Naudi Estates | Trusted Real Estate Experts in San Gwann</title>
+@endpush
+@push('meta-description')
+    <meta name="description"
+        content="Discover trusted real estate services with Naudi Estates in San Gwann. Buy, sell, or rent properties with confidence.
+    Local experts, transparent deals.">
 @endpush
 @section('main-section')
     <div class="w-full bg-cover bg-no-repeat h-80 md:h-200 text-white flex flex-col justify-center space-y-3 p-5 md:p-10"
@@ -13,7 +18,7 @@
             Professional Services for Property Owners in Malta
         </p>
         <div class="mt-4 md:mt-8 space-x-2 md:space-x-5">
-            <a href="{{route('Contact')}}"
+            <a href="{{ route('Contact') }}"
                 class="bg-[#C9A578] text-[#2D241A] hover:bg-[#2D241A] hover:text-[#C9A578] hover:cursor-pointer transition duration-100 ease-in-out uppercase font-medium rounded-full px-2 md:px-8 py-2 md:py-3 text-xs md:text-xl">
                 Contact Me
             </a>

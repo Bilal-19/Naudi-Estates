@@ -15,6 +15,7 @@
         rel="stylesheet">
     <link href='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css' rel='stylesheet' />
     @stack('title-tag')
+    @stack('meta-description')
     <style>
         body {
             font-family: "Inter", sans-serif;
