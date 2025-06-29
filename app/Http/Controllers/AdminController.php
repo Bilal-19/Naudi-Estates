@@ -20,7 +20,7 @@ class AdminController extends Controller
     public function readEnquiries()
     {
         if (Auth::check()) {
-            $fetchEnquiries = DB::table("enquiry")->get();
+            $fetchEnquiries = DB::table("enquiry")->paginate(8);
             return view("Admin.Enquiries", with(compact("fetchEnquiries")));
         } else {
             return view("AuthLayout.Login");
@@ -30,7 +30,7 @@ class AdminController extends Controller
     public function readTestimonials()
     {
         if (Auth::check()) {
-            $fetchTestimonials = DB::table("feedback")->get();
+            $fetchTestimonials = DB::table("feedback")->paginate(8);
             return view("Admin.Testimonials", with(compact("fetchTestimonials")));
         } else {
             return view("AuthLayout.Login");

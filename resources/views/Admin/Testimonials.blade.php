@@ -9,21 +9,21 @@
         <div class="w-full overflow-x-auto">
             <table class="min-w-max md:w-full">
                 <tr class="border-b text-sm font-medium">
-                    <th class="p-3">ID</th>
-                    <th class="p-3">Name</th>
-                    <th class="p-3">Rating</th>
-                    <th class="p-3">Message</th>
-                    <th class="p-3">Visibility</th>
-                    <th class="p-3">Date & Time</th>
+                    <th class="p-1">ID</th>
+                    <th class="p-1">Name</th>
+                    <th class="p-1">Rating</th>
+                    <th class="p-1">Message</th>
+                    <th class="p-1">Visibility</th>
+                    <th class="p-1">Date & Time</th>
                 </tr>
 
                 @foreach ($fetchTestimonials as $record)
-                    <tr class="border-b text-base md:text-md font-light">
-                        <td class="p-4">{{ $record->id }}</td>
-                        <td class="p-4">{{ $record->username }}</td>
-                        <td class="p-4">{{ $record->rating }}</td>
-                        <td class="p-4">{{ $record->message }}</td>
-                        <td class="p-4 text-center">
+                    <tr class="border-b text-sm md:text-md font-light">
+                        <td class="p-3">{{ $record->id }}</td>
+                        <td class="p-3">{{ $record->username }}</td>
+                        <td class="p-3">{{ $record->rating }}</td>
+                        <td class="p-3">{{ $record->message }}</td>
+                        <td class="p-3 text-center">
                             <a href="{{route('ToggleVisibility',['id'=>$record->id])}}">
                                 @if ($record->visibility === 'no')
                                     <i class="fa-solid fa-eye-slash"></i>
@@ -33,7 +33,7 @@
                             </a>
 
                         </td>
-                        <td class="p-4">{{ date('d M Y h:i:sa', strtotime($record->created_at)) }}</td>
+                        <td class="p-3">{{ date('d M Y | h:i:sa', strtotime($record->created_at)) }}</td>
                     </tr>
                 @endforeach
             </table>
