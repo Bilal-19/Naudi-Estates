@@ -18,32 +18,32 @@
             <div class="w-80 mx-auto md:w-2/5 md:mx-0 bg-white rounded-xl p-2 md:p-5 space-y-5 md:mr-5">
                 <div class="flex flex-row">
                     <div class="mr-2">
-                        <img src="{{ asset('assets/Contact/Phone.png') }}" alt="Phone Icon" class="h-10 md:h-8">
+                        <img src="{{ asset('assets/Contact/Phone.png') }}" alt="Phone Icon" class="h-8 md:h-10">
                     </div>
                     <div class="flex flex-col">
                         <h5 class="font-medium md:text-3xl">Phone</h5>
-                        <a href="" class="font-light text-base md:text-[25px]">356 77120233</a>
-                        <a href="" class="font-light text-base md:text-[25px]">356 77192141</a>
+                        <a href="tel:356 77120233" class="font-light text-base md:text-[25px]">356 77120233</a>
+                        <a href="tel:356 77192141" class="font-light text-base md:text-[25px]">356 77192141</a>
                     </div>
                 </div>
 
                 <div class="flex flex-row">
                     <div class="mr-2">
-                        <img src="{{ asset('assets/Contact/Email.png') }}" alt="Email Icon" class="h-10 md:h-8">
+                        <img src="{{ asset('assets/Contact/Email.png') }}" alt="Email Icon" class="h-8 md:h-10">
                     </div>
                     <div class="flex flex-col">
                         <h5 class="font-medium md:text-3xl">Email</h5>
-                        <a href="" class="font-light text-base md:text-[25px]">propertymanagernaudi@gmail.com</a>
+                        <a href="mailto:propertymanagernaudi@gmail.com" class="font-light text-base md:text-[25px]">propertymanagernaudi@gmail.com</a>
                     </div>
                 </div>
 
                 <div class="flex flex-row">
                     <div class="mr-2">
-                        <img src="{{ asset('assets/Contact/Location.png') }}" alt="Location Icon" class="h-10 md:h-8">
+                        <img src="{{ asset('assets/Contact/Location.png') }}" alt="Location Icon" class="h-8 md:h-10">
                     </div>
                     <div class="flex flex-col">
                         <h5 class="font-medium md:text-3xl">Location</h5>
-                        <a class="font-light text-base md:text-[25px]">San Gwann</a>
+                        <a class="font-light text-base md:text-[25px]" href="https://maps.app.goo.gl/dnm9RevyUdQaep5K9">San Gwann</a>
                     </div>
                 </div>
 

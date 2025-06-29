@@ -68,18 +68,18 @@
         <div class="flex flex-col md:flex-row justify-around md:gap-x-3 gap-y-8 md:gap-y-0">
             <div
                 class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
-                <img src="{{ asset('assets/Home/Icons/Map.png') }}" class="mx-auto md:mb-3 h-10 md:h-15" alt="">
+                <img src="{{ asset('assets/Home/Icons/Map.png') }}" class="mx-auto md:mb-3 h-10 md:h-15" alt="Map Icon">
                 <p class="font-light text-md md:text-xl">Local expertise in Maltese property law</p>
             </div>
             <div
                 class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
-                <img src="{{ asset('assets/Home/Icons/Support.png') }}" class="mx-auto md:mb-3 h-10 md:h-15" alt="">
+                <img src="{{ asset('assets/Home/Icons/Support.png') }}" class="mx-auto md:mb-3 h-10 md:h-15" alt="Support Icon">
                 <p class="font-light text-md md:text-xl">24/7 support for landlords and tenants</p>
             </div>
             <div
                 class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
                 <img src="{{ asset('assets/Home/Icons/Communication.png') }}" class="mx-auto md:mb-3 h-10 md:h-15"
-                    alt="">
+                    alt="Communication Icon">
                 <p class="font-light text-md md:text-xl">Transparent, real-time communication</p>
             </div>
         </div>
@@ -87,12 +87,12 @@
             <div
                 class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
                 <img src="{{ asset('assets/Home/Icons/HomePlan.png') }}" class="mx-auto md:mb-3 h-10 md:h-15"
-                    alt="">
+                    alt="Home Plan Icon">
                 <p class="font-light text-md md:text-xl">Custom-tailored management plans</p>
             </div>
             <div
                 class="w-80 mx-auto md:mx-0 md:w-1/4 text-center rounded-xl bg-white p-5 border-b-5 border-[#C9A578] shadow-md">
-                <img src="{{ asset('assets/Home/Icons/Globe.png') }}" class="mx-auto md:mb-3 h-10 md:h-15" alt="">
+                <img src="{{ asset('assets/Home/Icons/Globe.png') }}" class="mx-auto md:mb-3 h-10 md:h-15" alt="Global Icon">
                 <p class="font-light text-md md:text-xl">Trusted by international and local clients</p>
             </div>
         </div>
