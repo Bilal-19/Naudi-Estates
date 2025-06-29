@@ -1,10 +1,13 @@
 @extends('UserLayout.main')
 
+@push('title-tag')
+    <title>Client Testimonials | Hear from Our Happy Clients | Naudi Estates</title>
+@endpush
+@push('meta-description')
+    <meta name="description"
+        content="See what our happy clients say about their experience with Naudi Estates. Real stories from property buyers and sellers in San Gwann.">
+@endpush
 @section('main-section')
-    @push('title-tag')
-        <title>Client Testimonials | Hear from Our Happy Clients | Naudi Estates</title>
-    @endpush
-
     <div class="w-full bg-cover bg-no-repeat h-52 md:h-[662px] text-white flex flex-col justify-start p-10"
         style="background-image: url('{{ asset('assets/Feedback/banner.png') }}')">
         <h1 class="text-2xl md:text-6xl font-medium md:mt-30">
@@ -42,10 +45,11 @@
             <div class="flex flex-col">
                 <label for="name" class="mb-1 font-light text-base md:text-[25px]">Enter your name: </label>
                 <input type="text" name="username" id="name"
-                    class="bg-white rounded-lg px-3 py-2 border-b-5 border-[#C9A578] focus:outline-none" value="{{old('username')}}">
+                    class="bg-white rounded-lg px-3 py-2 border-b-5 border-[#C9A578] focus:outline-none"
+                    value="{{ old('username') }}">
                 <span class="text-red-800">
                     @error('username')
-                        {{ 'Please enter your name'  }}
+                        {{ 'Please enter your name' }}
                     @enderror
                 </span>
             </div>
@@ -55,7 +59,7 @@
                 <div class="flex flex-row-reverse justify-end gap-1 text-3xl">
                     @for ($i = 5; $i >= 1; $i--)
                         <input type="radio" name="rating" id="star{{ $i }}" value="{{ $i }}"
-                            class="hidden peer" required value="{{old('rating')}}"/>
+                            class="hidden peer" required value="{{ old('rating') }}" />
                         <label for="star{{ $i }}"
                             class="cursor-pointer text-gray-400 peer-checked:text-yellow-500 hover:text-yellow-500">&#9733;</label>
                     @endfor
@@ -68,7 +72,7 @@
                     class="bg-white rounded-lg px-3 py-2 border-b-5 border-[#C9A578] focus:outline-none resize-none"></textarea>
                 <span class="text-red-800">
                     @error('message')
-                        {{ 'Please share your feedback message'  }}
+                        {{ 'Please share your feedback message' }}
                     @enderror
                 </span>
             </div>
