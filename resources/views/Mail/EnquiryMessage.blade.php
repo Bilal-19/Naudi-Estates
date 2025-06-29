@@ -17,14 +17,14 @@
                     {{-- Logo Section --}}
                     <tr>
                         <td style="text-align: center; padding: 20px;">
-                            <img src="{{asset("assets/realestateLogo.png")}}" alt="Naudi Estate Logo"
+                            <img src="{{ $message->embed(public_path() . '/realestateLogo.png') }}" alt="Naudi Estate Logo"
                                 style="max-width: 150px;">
                         </td>
                     </tr>
 
                     {{-- Header Section --}}
                     <tr>
-                        <td style="background-color: #004080; padding: 20px; border-radius: 0;">
+                        <td style="background-color: #2D241A; padding: 20px; border-radius: 0;">
                             <h2 style="color: #ffffff; margin: 0;">New Enquiry Received</h2>
                         </td>
                     </tr>
@@ -37,15 +37,15 @@
 
                             <table cellpadding="5" cellspacing="0" width="100%" style="margin-top: 20px;">
                                 <tr>
-                                    <td width="30%" style="font-weight: bold; color: #004080;">Name:</td>
+                                    <td width="30%" style="font-weight: bold; color: #2D241A;">Name:</td>
                                     <td>{{ $clientName }}</td>
                                 </tr>
                                 <tr>
-                                    <td width="30%" style="font-weight: bold; color: #004080;">Email:</td>
+                                    <td width="30%" style="font-weight: bold; color: #2D241A;">Email:</td>
                                     <td>{{ $clientEmail }}</td>
                                 </tr>
                                 <tr>
-                                    <td width="30%" style="font-weight: bold; color: #004080;">Message:</td>
+                                    <td width="30%" style="font-weight: bold; color: #2D241A;">Message:</td>
                                     <td style="white-space: pre-line;">{{ $clientMessage }}</td>
                                 </tr>
                             </table>
