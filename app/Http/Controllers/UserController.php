@@ -78,7 +78,7 @@ class UserController extends Controller
         ]);
 
         if ($isEnquiryCreated) {
-            Mail::to("bilalmuhammadyousuf543@gmail.com")->
+            Mail::to("propertymanagernaudi@gmail.com")->
                 send(new EnquiryEmail(
                     $request->username,
                     $request->useremail,

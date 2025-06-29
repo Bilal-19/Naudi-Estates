@@ -8,7 +8,7 @@
     <div class="w-full bg-cover bg-no-repeat h-52 md:h-[662px] text-white flex flex-col justify-start p-10"
         style="background-image: url('{{ asset('assets/Feedback/banner.png') }}')">
         <h1 class="text-2xl md:text-6xl font-medium md:mt-30">
-            Real Stories
+            Real
             <span class="text-[#C9A578]">Stories</span>
             from Real
             <span class="text-[#C9A578]">Customers</span>
