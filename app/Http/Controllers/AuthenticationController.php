@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\PasswordResetEmail;
 use Auth;
 use Hash;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Mail;
 
 class AuthenticationController extends Controller
 {
@@ -84,7 +86,44 @@ class AuthenticationController extends Controller
     }
 
     // Forget Password
+    public function forgetPassword()
+    {
+        return view("AuthLayout.ForgetPassword");
+    }
 
+    // Reset Password
+    public function resetPassword(Request $request)
+    {
+        $request->validate([
+            "email" => "required"
+        ]);
+
+        // Check if email exist
+        $getEmail = $request->email;
+        $isAlreadyExist = $this->getEmailCount($getEmail);
+
+        // Create 6 digit new password & Store it into DB
+        $newPassword = random_int(100000, 999999);
+
+        if ($isAlreadyExist == 0){
+            toastr()->info("User with this email doesnot exist.");
+            return redirect()->back();
+        } else {
+            $updatePassword = DB::table("users")->update([
+                "password" => Hash::make($newPassword),
+                "updated_at" => now()
+            ]);
+
+            if ($updatePassword){
+                Mail::to($getEmail)->
+                    send(new PasswordResetEmail($newPassword));
+                    toastr()->success("New password is created and sent to your email.");
+                return redirect()->back();
+            }
+        }
+
+        // Send it to the user
+    }
 
     // Logout
     public function SignOut()

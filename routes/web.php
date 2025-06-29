@@ -28,4 +28,7 @@ Route::post("/create-account", [AuthenticationController::class,"createAccount"]
 
 Route::get("/log-in", [AuthenticationController::class,"Login"])->name("Login");
 Route::get("/log-out", [AuthenticationController::class,"SignOut"])->name("LogOut");
+Route::get("/forget-password", [AuthenticationController::class,"forgetPassword"])->name("ForgetPassword");
+
 Route::post("/login-attempt", [AuthenticationController::class,"loginAttempt"])->name("LoginAttempt");
+Route::post("/reset-password", [AuthenticationController::class,"resetPassword"])->name("ResetPassword");
